@@ -21,9 +21,19 @@
 
 # 파일을 r모드로 열면 다음의 메서드들을 사용할 수 있다
 # open함수를열떄쓴변수이름.read() #전체텍스트를 한번에 읽기
-f = open("chapter8_Module", "r")
-x = f.read()
+#f = open("chapter8_Module.py", "r")
+#x = f.read()
+#print(x)
+# open함수를열떄쓴변수이름.readlines() #파일 전체를 줄단위로 분리하여 리스트로 반환
+# open함수를열떄쓴변수이름.realine() #한번 호출할때마다 한줄씩 읽고, 파일끝에 도달하면 빈문자열''반환
+# open함수를열떄쓴변수이름.close() # 파일 닫기는 필수
+
 
 
 # encoding: 문자 인코딩 지정 (예:'utf-8', 기본값은 None)
+#utf-8은 한국어 파일 열때 사용한다.
 
+#with문으로 f.close() 자동화하기
+# with open("test.txt", "r") as f:
+#.   content = f.read()
+#with문 블록 들여쓰기가 끝나는 순간 파이썬이 자동으로 close()를 호출한다.

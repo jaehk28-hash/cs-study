@@ -1,0 +1,4 @@
+f = open("python/chapter8_Module.py", "r")
+content = f.read()
+print(content)
+f.close()

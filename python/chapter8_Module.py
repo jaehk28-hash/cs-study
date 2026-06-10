@@ -40,3 +40,4 @@ print(pi)
 #이때 import해서 불러올 모듈 안에 있는 일반 print를 저 if 문 안에 넣어야 import했을떄 실행이 안된다.
 #실행을 시키려면 python my.py처럼 직접실행을 해야 실행된다
 # __name__은 내가 직접 실행하면 __main__이고 다른 파일에서 import하면 파일이름이기 때문에 가능하다. 
+print("Hello")
